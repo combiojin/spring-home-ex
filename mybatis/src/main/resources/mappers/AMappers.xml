@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="a">
+	<insert id="ainsert">
+		insert into a
+		(aa,bb)
+		values
+		('aaa','bbb');
+	</insert>
+	
+	<insert id="binsert">
+		insert into a
+		(aa,bb)
+		values
+		('aaa','bbb');
+	</insert>
+</mapper>
