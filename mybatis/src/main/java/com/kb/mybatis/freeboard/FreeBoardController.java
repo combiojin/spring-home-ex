@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
+//@RequestMapping(value = "/freeboard")
 public class FreeBoardController {
 	
 	@Autowired
@@ -117,12 +118,3 @@ public class FreeBoardController {
 		return "redirect:index.do";
 	}
 }
-
-
-
-
-
-
-
-
-

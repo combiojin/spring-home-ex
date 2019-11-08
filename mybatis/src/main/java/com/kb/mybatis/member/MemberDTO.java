@@ -10,8 +10,8 @@ import lombok.RequiredArgsConstructor;
 public class MemberDTO {
 
 	private int idx;
-	private String title;
-	private String content;
+	private String name;
+	private int age;
 	private String rgdate;
 	
 }

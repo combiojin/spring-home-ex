@@ -29,20 +29,20 @@
 		<!-- 광고 -->
 		<div class="row">
 			<div class="jumbotron">
-				<h1>글수정</h1>
-				<p>제목과 글내용을 수정하실 수 있습니다.</p>
+				<h1>회원수정</h1>
+				<p>회원정보를 수정하실 수 있습니다.</p>
 			</div>
 		</div>
 		<!-- body -->
 		<div class="row">
-			<form action="${path}/freeboard/updateProc.do">
+			<form action="${path}/member/updateProc.do">
 				<input type="hidden" name="idx" value="${row.idx }">
 				<input type="hidden" name="rgdate" value="${row.rgdate }">
-				글제목
-				<input class="form-control" type="text" name="title" value="${row.title}"/>
-				글내용
-				<textarea class="form-control" rows="10" cols="50" name="content" >${row.content}</textarea>
-				<input class="btn btn-primary m-3" type="submit" value="글수정"/>
+				회원이름
+				<input class="form-control" type="text" name="name" value="${row.name}"/>
+				회원나이
+				<input class="form-control" type="text" name="age" value="${row.age}"/>
+				<input class="btn btn-primary m-3" type="submit" value="회원수정"/>
 			</form>
 		</div>
 	</div>

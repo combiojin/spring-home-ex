@@ -41,19 +41,20 @@
 		</div>
 		<!-- body -->
 		<div class="row">
-			<form id="delefrm" action="${path}/freeboard/delete.do">
+			<form id="delefrm" action="${path}/member/delete.do">
 				<h2>게시판목록</h2>
 				<div class="col-sm-1" style="float: right; margin: 10px;">
-					<button class="btn btn-primary" onclick="dodelete();">글삭제</button>
+					<button class="btn btn-primary" onclick="dodelete();">회원삭제</button>
 				</div>
 				<div class="col-sm-1" style="float: right; margin: 10px;">
-					<a class="btn btn-primary" href="${path}/freeboard/insert.do">글쓰기</a>
+					<a class="btn btn-primary" href="${path}/member/insert.do">회원등록</a>
 				</div>
 				<table class="table table-hover table-bordered">
 					<tr>
 						<th></th>
 						<th>순번</th>
-						<th>제목</th>
+						<th>이름</th>
+						<th>나이</th>
 						<th>날짜</th>
 						<th></th>
 					</tr>
@@ -61,10 +62,11 @@
 						<tr>
 							<td><input type="checkbox" name="idx" value="${fb.idx}"></td>
 							<td>${fb.idx}</td>
-							<td>${fb.title}</td>
+							<td>${fb.name}</td>
+							<td>${fb.age}</td>
 							<td>${fb.rgdate}</td>
 							<td><a class="btn btn-primary"
-								href="${path}/freeboad/update.do?idx=${fb.idx}">수정</a></td>
+								href="${path}/member/update.do?idx=${fb.idx}">수정</a></td>
 						</tr>
 					</c:forEach>
 				</table>
@@ -74,15 +76,3 @@
 	</div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-

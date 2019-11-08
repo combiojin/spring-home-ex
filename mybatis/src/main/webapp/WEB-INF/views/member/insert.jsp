@@ -29,18 +29,18 @@
 		<!-- 광고 -->
 		<div class="row">
 			<div class="jumbotron">
-				<h1>글쓰기</h1>
-				<p>제목과 글내용을 작성하실 수 있습니다.</p>
+				<h1>회원등록</h1>
+				<p>회원을 등록하실 수 있습니다.</p>
 			</div>
 		</div>
 		<!-- body -->
 		<div class="row">
-			<form action="${path}/freeboard/insertProc.do">
-				글제목
-				<input class="form-control" type="text" name="title"/>
-				글내용
-				<textarea class="form-control" rows="10" cols="50" name="content"></textarea>
-				<input class="btn btn-primary m-3" type="submit" value="글작성"/>
+			<form action="${path}/member/insertProc.do">
+				회원이름
+				<input class="form-control" type="text" name="name"/>
+				회원나이
+				<input class="form-control" type="text" name="age"/>
+				<input class="btn btn-primary m-3" type="submit" value="회원등록"/>
 			</form>
 		</div>
 	</div>
